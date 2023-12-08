@@ -1,0 +1,61 @@
+.mobileNavToggle {
+  position: absolute;
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #010000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  left: 80%;
+  top: 36px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #bada55;
+  }
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+
+.hamburger {
+  height: 4rem;
+  width: 3rem;
+}
+
+.mobileNav {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  height: 50%;
+  max-width: 100;
+  background-color: white;
+  /* left: 400px;
+  top: 36px; */
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 767px) {
+    background-color: white;
+    max-width: 500%;
+
+    display: flex;
+    color: #222;
+    text-decoration: none;
+
+    padding-right: 2rem;
+  }
+}
+
+.mobileNav a:active,
+a:focus {
+  background-color: white;
+  max-width: 500%;
+
+  display: flex;
+  color: #222;
+  text-decoration: none;
+
+  padding-right: 2rem;
+}
